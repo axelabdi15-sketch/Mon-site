@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta name="google-site-verification" content="fsq1VZekUanypkRmhGvMVZ93FW75DOvht5VpUR3HaXE">
+  <meta name="google-site-verification"
+        content="fsq1VZekUanypkRmhGvMVZ93FW75DOvht5VpUR3HaXE">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HDGL - Nettoyage, manutention et aide logistique sur les chantiers.">
-  <title>HDGL - Services de chantier</title>
+
+  <meta name="description"
+        content="HDGL - Services de chantier à Rennes et alentours : nettoyage, débarras, manutention, préparation de chantier, livraison et aide logistique.">
+
+  <title>HDGL - Services de chantier à Rennes</title>
 
   <style>
     * {
@@ -17,38 +21,55 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #111827;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f16;
       color: white;
       line-height: 1.6;
     }
 
     header {
-      padding: 70px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #111827, #1f2937);
+      padding: 35px 20px 65px;
+      background: linear-gradient(135deg, #0b0f16, #202733);
     }
 
-    header h1 {
-      font-size: 55px;
-      margin-bottom: 10px;
-      letter-spacing: 4px;
+    .logo {
+      width: min(430px, 95%);
+      height: auto;
+      margin: auto;
+      display: block;
     }
 
     header p {
-      font-size: 21px;
-      color: #d1d5db;
+      font-size: 19px;
+      color: #d8d8d8;
+      margin-top: 8px;
+    }
+
+    .zone {
+      color: #e5b84b !important;
+      font-weight: bold;
+      margin-top: 10px !important;
+    }
+
+    .buttons {
+      margin-top: 25px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 25px;
-      padding: 14px 25px;
-      background: #f59e0b;
-      color: #111827;
+      margin: 7px;
+      padding: 14px 23px;
+      border-radius: 12px;
       text-decoration: none;
-      border-radius: 10px;
       font-weight: bold;
+      background: #e5b84b;
+      color: #111;
+    }
+
+    .whatsapp {
+      background: #20c968;
+      color: white;
     }
 
     section {
@@ -70,98 +91,270 @@
     }
 
     .card {
-      background: #1f2937;
+      background: #171e28;
+      border: 1px solid #303946;
+      border-radius: 16px;
       padding: 25px;
-      border-radius: 15px;
-      border: 1px solid #374151;
     }
 
     .card h3 {
-      color: #f59e0b;
+      color: #e5b84b;
       margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #d5d8dc;
     }
 
     .contact {
-      text-align: center;
-      background: #1f2937;
+      background: #171e28;
       border-radius: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .phone {
+      font-size: 27px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .phone a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .social {
+      margin-top: 30px;
     }
 
     .social a {
-      color: #f59e0b;
-      margin: 0 10px;
+      display: inline-block;
+      color: #e5b84b;
       text-decoration: none;
       font-weight: bold;
+      margin: 8px 12px;
     }
 
     footer {
       text-align: center;
       padding: 25px;
-      color: #9ca3af;
-      font-size: 14px;
+      color: #9299a3;
+      border-top: 1px solid #252d38;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- EN-TÊTE -->
   <header>
-    <h1>HDGL</h1>
-    <p>Services de chantier • Nettoyage • Manutention • Logistique</p>
-    <a class="btn" href="#contact">Nous contacter</a>
+
+    <!-- LOGO HDGL -->
+    <svg class="logo"
+         viewBox="0 0 600 400"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-label="Logo HDGL">
+
+      <rect width="600" height="400" rx="25" fill="#0b0f16"/>
+
+      <!-- Maison -->
+      <path d="M100 150 L300 45 L500 150"
+            fill="none"
+            stroke="#e5b84b"
+            stroke-width="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+
+      <path d="M140 150 L300 68 L460 150"
+            fill="none"
+            stroke="#eeeeee"
+            stroke-width="12"/>
+
+      <!-- Cheminée -->
+      <path d="M145 135 L145 85"
+            stroke="#e5b84b"
+            stroke-width="22"/>
+
+      <!-- Fenêtre -->
+      <rect x="275" y="115" width="50" height="55"
+            fill="#eeeeee"/>
+
+      <path d="M300 115 V170 M275 142 H325"
+            stroke="#0b0f16"
+            stroke-width="7"/>
+
+      <!-- HDGL -->
+      <text x="300"
+            y="270"
+            text-anchor="middle"
+            font-family="Arial, sans-serif"
+            font-size="105"
+            font-weight="900"
+            letter-spacing="-7"
+            fill="#eeeeee">
+        HDGL
+      </text>
+
+      <!-- Ligne dorée -->
+      <path d="M85 305 H515"
+            stroke="#e5b84b"
+            stroke-width="4"/>
+
+      <!-- Petit symbole outil -->
+      <path d="M100 330 L145 295 L170 320 L125 355 Z"
+            fill="#eeeeee"/>
+
+      <path d="M145 320 L175 350"
+            stroke="#e5b84b"
+            stroke-width="10"
+            stroke-linecap="round"/>
+
+    </svg>
+
+    <p>
+      Services de chantier • Nettoyage • Manutention • Logistique
+    </p>
+
+    <p class="zone">
+      📍 Rennes et alentours
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn" href="tel:+33773642931">
+        📞 Appeler HDGL
+      </a>
+
+      <a class="btn whatsapp"
+         href="https://wa.me/33773642931"
+         target="_blank">
+        💬 WhatsApp
+      </a>
+
+    </div>
+
   </header>
 
+
+  <!-- SERVICES -->
   <section>
+
     <h2>Nos services</h2>
 
     <div class="services">
 
       <div class="card">
         <h3>🧹 Nettoyage de chantier</h3>
-        <p>Nettoyage et remise en état des espaces après ou pendant les travaux.</p>
+        <p>
+          Nettoyage et remise en état des espaces pendant ou après les travaux.
+        </p>
       </div>
 
       <div class="card">
         <h3>🚧 Débarras de chantier</h3>
-        <p>Débarras, évacuation et rangement des déchets et matériaux de chantier.</p>
+        <p>
+          Débarras, rangement et évacuation des déchets et matériaux de chantier.
+        </p>
       </div>
 
       <div class="card">
         <h3>💪 Manutention</h3>
-        <p>Aide à la manutention et aux différentes tâches nécessaires sur les chantiers.</p>
+        <p>
+          Aide à la manutention et aux différentes tâches nécessaires sur les chantiers.
+        </p>
       </div>
 
       <div class="card">
         <h3>🛠️ Préparation de chantier</h3>
-        <p>Préparation, protection et organisation des espaces avant les travaux.</p>
+        <p>
+          Préparation, protection et organisation des espaces avant les travaux.
+        </p>
       </div>
 
       <div class="card">
         <h3>🚚 Livraison</h3>
-        <p>Livraison et transport léger de matériaux de chantier dans le respect des règles applicables.</p>
+        <p>
+          Livraison et transport léger de matériaux de chantier dans le respect des règles applicables.
+        </p>
       </div>
 
       <div class="card">
         <h3>📦 Aide logistique</h3>
-        <p>Accompagnement logistique et aide aux professionnels sur leurs chantiers.</p>
+        <p>
+          Aide logistique aux professionnels et accompagnement sur les chantiers.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🧹 Nettoyage des locaux</h3>
+        <p>
+          Nettoyage et entretien des espaces professionnels et des zones de travail.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏗️ Aide aux travaux</h3>
+        <p>
+          Assistance et aide générale pour les besoins des professionnels sur chantier.
+        </p>
       </div>
 
     </div>
+
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contactez HDGL</h2>
 
-    <p>Pour toute demande de renseignement ou de prestation, contactez-nous.</p>
+  <!-- CONTACT -->
+  <section>
 
-    <div class="social" style="margin-top:25px;">
-      <a href="https://www.instagram.com/Axel_Abdi" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@Lpanika15" target="_blank">TikTok</a>
+    <div class="contact">
+
+      <h2>Contactez HDGL</h2>
+
+      <p>
+        Besoin d'une prestation à Rennes ou aux alentours ?
+      </p>
+
+      <div class="phone">
+        <a href="tel:+33773642931">
+          📞 07 73 64 29 31
+        </a>
+      </div>
+
+      <a class="btn"
+         href="tel:+33773642931">
+        Appeler maintenant
+      </a>
+
+      <a class="btn whatsapp"
+         href="https://wa.me/33773642931"
+         target="_blank">
+        💬 Écrire sur WhatsApp
+      </a>
+
+      <div class="social">
+
+        <a href="https://www.instagram.com/Axel_Abdi"
+           target="_blank">
+          📷 Instagram : Axel_Abdi
+        </a>
+
+        <a href="https://www.tiktok.com/@Lpanika15"
+           target="_blank">
+          🎵 TikTok : Lpanika15
+        </a>
+
+      </div>
+
     </div>
+
   </section>
+
 
   <footer>
-    © 2026 HDGL - Tous droits réservés
+    © 2026 HDGL — Services de chantier à Rennes et alentours
   </footer>
 
 </body>
